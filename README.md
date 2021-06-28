@@ -1,6 +1,8 @@
 # Interior Design landing page website
 Simple website created with React.js and Material UI
 
+![Application screenshot image](./src/images/screen.JPG)
+
 ## Technologies stack
 * React.js
 * Sass version 4.14.1
