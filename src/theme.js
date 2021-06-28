@@ -6,7 +6,7 @@ export const theme = createMuiTheme({
     palette: createPalette({
         primary: {
           main: "#0F172A",
-          contrastText: "#051117",
+          contrastText: "white",
         },
         secondary: {
         main: '#134E4A',
@@ -17,6 +17,7 @@ export const theme = createMuiTheme({
   
       overrides: {
         MuiButton: {
+     
           text: {
             color: "#3C3C3C",
             textTransform: "none",
@@ -24,6 +25,9 @@ export const theme = createMuiTheme({
             borderRadius: "0px",
             letterSpacing: "1.3px",
           }
+        },
+        MuiPaper: {
+            borderRadius: "0px",
         }
       }
   });
