@@ -13,18 +13,18 @@ const useStyles = makeStyles((theme) => ({
         margin: "60px 0",
     },
 
-    DescriptionWrapper: {
+    descriptionWrapper: {
         display: "flex",
         lineHeight: "1.6",
         justifyContent: "space-between"
     },
-    DescriptionSection: {
+    descriptionSection: {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         width: "50%"
     },
-    DescriptionTitle: {
+    descriptionTitle: {
         fontFamily: "Calligraffitti",
         fontSize: "2.6em"
     },
@@ -47,10 +47,10 @@ const AboutUs = () => {
         <div className={classes.aboutSection}>
             <h2 className={classes.sectionTitle}>About us</h2>
             <Container>
-            <div className={classes.DescriptionWrapper}>
-                <div className={classes.DescriptionSection}>
-                   <h3 className={classes.DescriptionTitle}>Who are we?</h3>
-                   <p className={classes.Description}>
+            <div className={classes.descriptionWrapper}>
+                <div className={classes.descriptionSection}>
+                   <h3 className={classes.descriptionTitle}>Who are we?</h3>
+                   <p className={classes.description}>
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

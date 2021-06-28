@@ -3,7 +3,6 @@ import "../styles/fonts.scss";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import { Container } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
 import Project from './Project';
 import ImageInterior1 from '../images/interior-design-1.jpg';
 import ImageInterior2 from '../images/interior-design-2.jpg';
