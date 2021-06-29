@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 const FAQComponent = () => {
     const classes = useStyles();
     return ( 
-        <div className={classes.FAQSection}>
+        <div className={classes.FAQSection} id="faq">
             <Container>
             <h3 className={classes.sectionTitle}>Frequently Asked Questions</h3>
             <ul className={classes.ulList} >{questions.map((question, index) => {

@@ -6,22 +6,38 @@ import ContactForm from './ContactForm';
 const useStyles = makeStyles((theme) => ({
     root: {
     width: "100wv",
-    height: "100vh",
-    backgroundImage: `url(${BackgrondImage})`,
-    backgroundPosition: "bottom",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+   backgroundColor: "#F5F5F5",
+   padding: "20px 0",
     display: "flex",
+    flexDirection: "column",
+    [theme.breakpoints.up('md')] : {
+        flexDirection: "row",
+        backgroundImage: `url(${BackgrondImage})`,
+        backgroundPosition: "bottom",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        height: "100vh",
+     },
     },
     blankWrapper: {
-        width: "60%"
+        width: "40%",
+        [theme.breakpoints.up('lg')] : {
+            width: "60%",
+         },
     },
     contactWrapper: {
         display: "flex",
-        width: "40%",
+        width: "100%",
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
+        [theme.breakpoints.up('lg')] : {
+            width: "40%",
+         },
+         [theme.breakpoints.up('md')] : {
+            width: "60%"
+         },
+        
     },
     contactTitle: {
         fontFamily: "Calligraffitti",
@@ -36,13 +52,14 @@ const Contact = () => {
     const classes = useStyles();
     return ( 
         <div className={classes.root}>
-             <div className={classes.blankWrapper}>
+            <div className={classes.blankWrapper}>
                 
-            </div>
-            <div className={classes.contactWrapper}>
-                <h3 className={classes.contactTitle}>Contact us</h3>
-                <ContactForm />
-            </div>
+                </div>
+                <div className={classes.contactWrapper} id="contactForm">
+                    <h3 className={classes.contactTitle}>Contact us</h3>
+                    <ContactForm />
+                </div>
+     
 
         </div>
      );

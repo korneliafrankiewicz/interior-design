@@ -8,15 +8,37 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         height: "60px",
-        alignItems: "center"
+        alignItems: "center",
+        flexDirection: "row",
+        [theme.breakpoints.up('md')] : {
+           flexDirection: "column"
+        },
+    },
+    copyrights: {
+        fontSize: "0.7em",
+        marginRight: "10px",
+        [theme.breakpoints.up('md')] : {
+            fontSize: "1em",
+         },
     },
     socialIcons: {
-        position: "absolute",
-        right: "80px",
-        fontSize: "2em"
+        right: "10px",
+        fontSize: "1em",
+        display: "flex",
+
+        [theme.breakpoints.up('md')] : {
+            position: "absolute",
+            fontSize: "2em",
+            right: "80px",
+         },
+      
+   
     },
     icon: {
-        marginLeft: "20px",
+        marginLeft: "5px",
+        [theme.breakpoints.up('md')] : {
+            marginLeft: "20px",
+         },
         "&:hover": {
           cursor: "pointer",
       }
@@ -30,7 +52,7 @@ const Footer = () => {
     const classes = useStyles();
     return ( 
         <footer className={classes.footerSection}>
-            <p>Copyrights © 2021 Kornelia Frankiewicz. All Rights Reserved.</p>
+            <p className={classes.copyrights}>Copyrights © 2021 Kornelia Frankiewicz. All Rights Reserved.</p>
             <div className={classes.socialIcons}>
               <span className={classes.icon}><i  className="fab fa-facebook-square"></i></span>
               <span className={classes.icon}><i className="fab fa-instagram"></i></span>

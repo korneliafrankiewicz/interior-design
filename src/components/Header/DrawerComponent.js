@@ -42,29 +42,23 @@ const DrawerComponent = () => {
           <List>
             <ListItem divider button  onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
-                <ListItemText><Link className={classes.menuLink} to="cooperation" smooth={true} duration={500}>Oferta współpracy</Link></ListItemText>
+                <ListItemText><Link className={classes.menuLink} to="about" smooth={true} duration={500}>About us</Link></ListItemText>
                 
               </ListItemIcon>
             </ListItem>
   
             <ListItem divider button onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
-                <ListItemText> <Link className={classes.menuLink} to="bestsellers" smooth={true} duration={500}>Bestsellery</Link></ListItemText>
+                <ListItemText> <Link className={classes.menuLink} to="projects" smooth={true} duration={500}>Projects</Link></ListItemText>
               </ListItemIcon>
             </ListItem>
   
-            <ListItem divider button onClick={() => setOpenDrawer(false)}>
-              <ListItemIcon>
-                <ListItemText> 
-                <a rel="noopener noreferrer" target="_blank" className={classes.menuLink} href="https://sklep.greenservice.pl/pl/">Sklep</a>
-                </ListItemText>
-              </ListItemIcon>
-            </ListItem>
+ 
   
             <ListItem divider button onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText>
-                <Link className={classes.menuLink}  to="cooperation" smooth={true} duration={1000}>Kontakt</Link>
+                <Link className={classes.menuLink}  to="contactForm" smooth={true} duration={1000}>Contact</Link>
                 </ListItemText>
               </ListItemIcon>
             </ListItem>
@@ -72,7 +66,7 @@ const DrawerComponent = () => {
             <ListItem divider button onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText> 
-                <Link className={classes.menuLink}  to="company_data" smooth={true} duration={1000}>Dane firmy</Link>
+                <Link className={classes.menuLink}  to="faq" smooth={true} duration={1000}>FAQ</Link>
                 </ListItemText>
               </ListItemIcon>
             </ListItem>

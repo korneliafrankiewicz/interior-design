@@ -14,6 +14,7 @@ import {
 import DrawerComponent from './DrawerComponent';
 
 
+
 const useStyles = makeStyles(theme => ({
   appbar: {
     backgroundColor: "transparent",
@@ -84,19 +85,19 @@ const Navbar = () => {
               
                >
                 <Button className={classes.menuButton} color="secondary">
-                <Link className={classes.menuLink}  to="cooperation" smooth={true} duration={1000}>About us</Link>
+                <Link className={classes.menuLink}  to="about" smooth={true} duration={1000}>About us</Link>
                 </Button>
                 
                 <Button className={classes.menuButton} color="secondary">
-                <Link className={classes.menuLink} to="bestsellers" smooth={true} duration={1000}>Projects</Link>
+                <Link className={classes.menuLink} to="projects" smooth={true} duration={1000}>Projects</Link>
                 </Button>
                 <Button className={classes.menuButton} color="secondary">
-                <Link className={classes.menuLink} to="bestsellers" smooth={true} duration={1000}>Contact</Link>
+                <Link className={classes.menuLink} to="contactForm" smooth={true} duration={1000}>Contact</Link>
                 </Button>
         
                 
                 <Button className={classes.menuButton} color="secondary">
-                <Link  to="cooperation" smooth={true} duration={1000}>FAQ</Link>
+                <Link  to="faq" smooth={true} duration={1000}>FAQ</Link>
                 </Button>
                
                         

@@ -16,13 +16,23 @@ const useStyles = makeStyles((theme) => ({
     descriptionWrapper: {
         display: "flex",
         lineHeight: "1.6",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        flexDirection: "column",
+        [theme.breakpoints.up('sm')] : {
+            flexDirection: "row",
+         },
+        
     },
     descriptionSection: {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        width: "50%"
+        width: "100%",
+        marginBottom: "10px",
+        [theme.breakpoints.up('md')] : {
+            justifyContent: "center",
+            width: "45%",
+         },
+  
     },
     descriptionTitle: {
         fontFamily: "Calligraffitti",
@@ -30,11 +40,14 @@ const useStyles = makeStyles((theme) => ({
     },
     sectionImage: {
         display: "flex",
-        width:"50%",
+        width:"100%",
         backgroundImage: `url(${SectionAboutImg})`,
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         height: "750px",
+        [theme.breakpoints.up('md')] : {
+            width: "50%",
+         },
   
     }
 
@@ -44,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 const AboutUs = () => {
     const classes = useStyles();
     return ( 
-        <div className={classes.aboutSection}>
+        <div className={classes.aboutSection} id="about">
             <h2 className={classes.sectionTitle}>About us</h2>
             <Container>
             <div className={classes.descriptionWrapper}>

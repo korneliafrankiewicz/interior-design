@@ -2,6 +2,7 @@ import React from 'react';
 import "../styles/fonts.scss";
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
+import {Link} from "react-scroll";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,7 +30,9 @@ const HomeTitle = () => {
     return ( 
         <div className={classes.titleWrapper}>
             <h1 className={classes.title}>Design<br/> Your Space.</h1>
-            <Button className={classes.buttonCTA}>Ask for details</Button>
+            <Button className={classes.buttonCTA}>
+            <Link to="contactForm" smooth={true} duration={1000}>Ask for details</Link>
+            </Button>
           
         </div>
      );
