@@ -14,8 +14,7 @@ import ImageInterior6 from '../images/interior-design-6.jpg';
 const useStyles = makeStyles((theme) => ({
     sectionTitle: {
         fontSize: "3em",
-        marginTop: "160px",
-        marginBottom: "100px"
+        margin: "100px 0"
     },
     root: {
         marginBottom: "20px",

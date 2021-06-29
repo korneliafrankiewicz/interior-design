@@ -6,7 +6,7 @@ import "../styles/fonts.scss";
 
 const useStyles = makeStyles((theme) => ({
     aboutSection: {
-        height: "800px", 
+ 
     },
     sectionTitle: {
         fontSize: "3em",
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         height: "750px",
-        width: "500px",
+  
     }
 
     }
