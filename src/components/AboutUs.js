@@ -47,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
         height: "750px",
         [theme.breakpoints.up('md')] : {
             width: "50%",
+            backgroundSize: "cover",
          },
   
     }

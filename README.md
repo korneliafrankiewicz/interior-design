@@ -8,7 +8,6 @@ Simple website created with React.js and Material UI
 * Sass version 4.14.1
 * Material UI
 * React Scroll
-* React Router Dom
 
 # Getting Started with Create React App
 
