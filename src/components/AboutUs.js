@@ -42,12 +42,13 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         width:"100%",
         backgroundImage: `url(${SectionAboutImg})`,
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        height: "750px",
+        height: "400px",
         [theme.breakpoints.up('md')] : {
             width: "50%",
             backgroundSize: "cover",
+            height: "750px",
          },
   
     }
