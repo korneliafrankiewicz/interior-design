@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: "space-between",
         flexWrap: 'wrap',
+        [theme.breakpoints.up('md')] : {
+            justifyContent: "space-around",
+         },
       },
       paperCard: {
       marginBottom: "60px",
